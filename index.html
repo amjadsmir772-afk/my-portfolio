@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyShop | الرئيسية</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <span>مرحباً بك في EasyShop</span>
+      <span class="clock" id="clock"></span>
+    </div>
+  </div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Easy<span>Shop</span></a>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button">☰</button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a class="active" href="index.html">الرئيسية</a></li>
+          <li><a href="products.html">المنتجات</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+          <li><a id="loginNav" href="login.html">تسجيل الدخول</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" type="button" title="الوضع الليلي">🌙</button>
+        <a class="icon-btn cart-link" href="cart.html" title="سلة المشتريات">🛒 <span class="badge" id="cartCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="home-hero">
+      <div class="container home-hero-grid">
+
+        <div class="home-hero-content">
+          <span class="hero-label">عروض وتقنيات تناسب احتياجاتك</span>
+          <h1>اختر جهازك الجديد <span>من EasyShop</span></h1>
+          <p>هواتف وساعات ذكية وسماعات وأجهزة حاسوب محمولة في مكان واحد، مع خيارات متنوعة وأسعار مناسبة.</p>
+
+          <div class="home-hero-buttons">
+            <a class="btn hero-main-btn" href="products.html">تصفح المنتجات</a>
+            <a class="btn secondary" href="#featured">المنتجات المميزة</a>
+          </div>
+
+          <div class="hero-benefits">
+            <div class="hero-benefit"><span>✓</span><div><strong>منتجات متنوعة</strong><small>خيارات تناسب احتياجاتك</small></div></div>
+            <div class="hero-benefit"><span>✓</span><div><strong>تسوق بسهولة</strong><small>إضافة وإدارة السلة بسرعة</small></div></div>
+            <div class="hero-benefit"><span>✓</span><div><strong>أسعار مناسبة</strong><small>خصومات على منتجات مختارة</small></div></div>
+          </div>
+        </div>
+
+        <div class="home-showcase">
+          <div class="showcase-main">
+            <div class="showcase-badge">الأكثر طلباً</div>
+            <img src="images/5.jpeg" alt="Samsung Galaxy S23 Ultra">
+            <div class="showcase-info">
+              <span>هاتف ذكي</span>
+              <strong>Samsung Galaxy S23 Ultra</strong>
+              <div>3199.00 ر.س</div>
+            </div>
+          </div>
+
+          <div class="showcase-small">
+            <a href="products.html" class="showcase-item">
+              <img src="images/21.jpeg" alt="ساعة ذكية">
+              <div><small>ساعات ذكية</small><strong>اكتشف المجموعة</strong></div>
+            </a>
+            <a href="products.html" class="showcase-item">
+              <img src="images/28.jpeg" alt="سماعات">
+              <div><small>سماعات</small><strong>صوت وتصميم مميز</strong></div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="home-categories">
+      <div class="container">
+        <div class="home-section-title">
+          <div><span>تسوق حسب الفئة</span><h2>ماذا تبحث عنه؟</h2></div>
+          <a href="products.html">عرض الكل ←</a>
+        </div>
+
+        <div class="category-grid">
+          <a href="products.html" class="category-card">
+            <div class="category-image"><img src="images/5.jpeg" alt="هواتف"></div>
+            <div><h3>الهواتف</h3><p>11 منتج</p></div>
+            <span class="category-arrow">←</span>
+          </a>
+
+          <a href="products.html" class="category-card">
+            <div class="category-image"><img src="images/19.jpeg" alt="ساعات"></div>
+            <div><h3>الساعات</h3><p>10 منتجات</p></div>
+            <span class="category-arrow">←</span>
+          </a>
+
+          <a href="products.html" class="category-card">
+            <div class="category-image"><img src="images/28.jpeg" alt="سماعات"></div>
+            <div><h3>السماعات</h3><p>12 منتج</p></div>
+            <span class="category-arrow">←</span>
+          </a>
+
+          <a href="products.html" class="category-card">
+            <div class="category-image"><img src="images/43.jpeg" alt="حواسيب"></div>
+            <div><h3>الحواسيب</h3><p>12 منتج</p></div>
+            <span class="category-arrow">←</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-services">
+      <div class="container">
+        <div class="home-services-grid">
+          <div class="home-service"><div class="service-icon">🛍️</div><div><h3>تشكيلة متنوعة</h3><p>منتجات تقنية للاستخدام اليومي.</p></div></div>
+          <div class="home-service"><div class="service-icon">💳</div><div><h3>طلب سهل</h3><p>أضف منتجاتك وأكمل طلبك بسهولة.</p></div></div>
+          <div class="home-service"><div class="service-icon">💬</div><div><h3>تواصل معنا</h3><p>يمكنك إرسال استفسارك في أي وقت.</p></div></div>
+          <div class="home-service"><div class="service-icon">⭐</div><div><h3>تقييم المنتجات</h3><p>قيّم المنتجات بعد تجربتها.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-section" id="featured">
+      <div class="container">
+        <div class="home-section-title">
+          <div>
+            <span>منتجات مختارة</span>
+            <h2>المنتجات المميزة</h2>
+            <p>اخترنا لك مجموعة من أبرز المنتجات المتوفرة.</p>
+          </div>
+          <a class="btn secondary" href="products.html">مشاهدة جميع المنتجات</a>
+        </div>
+        <div class="products-grid" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <section class="home-offer">
+      <div class="container">
+        <div class="offer-box">
+          <div class="offer-content">
+            <span class="offer-label">عروض EasyShop</span>
+            <h2>اختر ما يناسبك من أحدث الأجهزة</h2>
+            <p>تصفح جميع الأقسام واكتشف المنتجات والخصومات المتوفرة حالياً.</p>
+            <a class="offer-button" href="products.html">ابدأ التسوق</a>
+          </div>
+
+          <div class="offer-products">
+            <img class="offer-product offer-product-1" src="images/5.jpeg" alt="هاتف">
+            <img class="offer-product offer-product-2" src="images/43.jpeg" alt="لابتوب">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="index.html">Easy<span>Shop</span></a>
+        <p>متجر للأجهزة والإكسسوارات التقنية، نوفر خيارات متنوعة للاستخدام اليومي والعمل والترفيه.</p>
+      </div>
+
+      <div>
+        <h3>روابط سريعة</h3>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="products.html">المنتجات</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>خدمة العملاء</h3>
+        <ul>
+          <li>السبت - الخميس</li>
+          <li>9:00 صباحاً - 6:00 مساءً</li>
+          <li>support@easyshop.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">© 2026 EasyShop - جميع الحقوق محفوظة</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <button class="back-top" id="backTop" type="button">↑</button>
+
+  <div class="modal" id="productModal">
+    <div class="modal-box">
+      <button class="close-modal" id="closeModal" type="button">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول | EasyShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <div class="topbar">
+        <div class="container">
+            <span>مرحباً بك في EasyShop</span>
+            <span class="clock" id="clock"></span>
+        </div>
+    </div>
+
+
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">Easy<span>Shop</span></a>
+            <button class="icon-btn menu-btn" id="menuBtn" type="button">☰</button>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="services.html">الخدمات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a class="active" id="loginNav" href="login.html">تسجيل الدخول</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeBtn" type="button" title="الوضع الليلي">🌙</button>
+                <a class="icon-btn cart-link" href="cart.html" title="سلة المشتريات">
+                    🛒 <span class="badge" id="cartCount">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="auth-page">
+        <div class="container auth-container">
+
+
+            <section class="auth-intro">
+                <div class="auth-intro-content">
+                    <a class="auth-brand" href="index.html">Easy<span>Shop</span></a>
+                    <span class="auth-welcome">أهلاً بعودتك</span>
+
+                    <h1>تسوق واحفظ طلباتك <span>في حساب واحد</span></h1>
+                    <p>سجل الدخول للوصول إلى حسابك ومتابعة طلباتك والاستفادة من جميع خصائص المتجر.</p>
+
+                    <div class="auth-features">
+                        <div class="auth-feature">
+                            <span>✓</span>
+                            <div>
+                                <strong>متابعة الطلبات</strong>
+                                <small>شاهد طلباتك السابقة وحالتها</small>
+                            </div>
+                        </div>
+
+                        <div class="auth-feature">
+                            <span>✓</span>
+                            <div>
+                                <strong>حفظ بيانات الحساب</strong>
+                                <small>وصول أسرع إلى معلوماتك</small>
+                            </div>
+                        </div>
+
+                        <div class="auth-feature">
+                            <span>✓</span>
+                            <div>
+                                <strong>تجربة تسوق أسهل</strong>
+                                <small>منتجاتك وطلباتك في مكان واحد</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="auth-shapes">
+                    <span class="auth-circle circle-a"></span>
+                    <span class="auth-circle circle-b"></span>
+                    <span class="auth-circle circle-c"></span>
+                </div>
+            </section>
+
+
+            <section class="auth-form-side">
+                <div class="auth-form-box">
+                    <div class="auth-form-heading">
+                        <span>حسابي</span>
+                        <h2>تسجيل الدخول</h2>
+                        <p>أدخل البريد الإلكتروني وكلمة المرور.</p>
+                    </div>
+
+                    <div id="formMessage" class="form-message"></div>
+
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginEmail">البريد الإلكتروني</label>
+                            <div class="auth-input-wrap">
+                                <span class="auth-input-icon">✉</span>
+                                <input class="input auth-input" id="loginEmail" type="email" placeholder="example@email.com" autocomplete="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="password-label">
+                                <label for="loginPassword">كلمة المرور</label>
+                            </div>
+                            <div class="auth-input-wrap">
+                                <span class="auth-input-icon">🔒</span>
+                                <input class="input auth-input password-input" id="loginPassword" type="password" placeholder="أدخل كلمة المرور" autocomplete="current-password" required>
+                                <button type="button" class="toggle-password" id="toggleLoginPassword" aria-label="إظهار كلمة المرور">👁</button>
+                            </div>
+                        </div>
+
+                        <div class="login-options">
+                            <label class="remember-me">
+                                <input type="checkbox" id="rememberMe">
+                                <span>تذكرني</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn auth-submit">تسجيل الدخول</button>
+                    </form>
+
+                    <div class="auth-divider">
+                        <span>أو</span>
+                    </div>
+
+                    <div class="register-question">
+                        <span>ليس لديك حساب؟</span>
+                        <a href="register.html">إنشاء حساب جديد</a>
+                    </div>
+
+                    <a href="index.html" class="back-home">العودة إلى الرئيسية</a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <footer class="footer auth-footer">
+        <div class="container footer-bottom">
+            © 2026 EasyShop - جميع الحقوق محفوظة
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <button class="back-top" id="backTop" type="button">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

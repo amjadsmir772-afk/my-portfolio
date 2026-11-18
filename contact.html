@@ -1,0 +1,231 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | EasyShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="container">
+            <span>مرحباً بك في EasyShop</span>
+            <span class="clock" id="clock"></span>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">Easy<span>Shop</span></a>
+            <button class="icon-btn menu-btn" id="menuBtn" type="button">☰</button>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="services.html">الخدمات</a></li>
+                    <li><a class="active" href="contact.html">اتصل بنا</a></li>
+                    <li><a id="loginNav" href="login.html">تسجيل الدخول</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeBtn" type="button" title="الوضع الليلي">🌙</button>
+                <a class="icon-btn cart-link" href="cart.html" title="سلة المشتريات">
+                    🛒 <span class="badge" id="cartCount">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <span class="contact-label">نحن هنا لمساعدتك</span>
+                <h1>تواصل معنا</h1>
+                <p>إذا كان لديك سؤال حول منتج أو طلب، أرسل لنا رسالتك وسنكون سعداء بمساعدتك.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">📞</div>
+                        <div>
+                            <h3>الهاتف</h3>
+                            <p>تواصل معنا خلال أوقات العمل</p>
+                            <a href="tel:772181602">772181602</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">✉️</div>
+                        <div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>أرسل استفسارك عبر البريد</p>
+                            <a href="mailto:support@easyshop.com">support@easyshop.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">📍</div>
+                        <div>
+                            <h3>العنوان</h3>
+                            <p>يمكنك التواصل معنا من</p>
+                            <strong>صنعاء - اليمن</strong>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="contact-main-grid">
+
+                    <div class="contact-form-box">
+                        <div class="contact-form-head">
+                            <span>أرسل رسالة</span>
+                            <h2>كيف يمكننا مساعدتك؟</h2>
+                            <p>املأ البيانات التالية وسنستقبل رسالتك.</p>
+                        </div>
+
+                        <div id="formMessage" class="form-message"></div>
+
+                        <form id="contactForm">
+                            <div class="contact-form-row">
+                                <div class="form-group">
+                                    <label for="contactName">الاسم الكامل</label>
+                                    <input class="input" id="contactName" type="text" placeholder="اكتب اسمك" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactPhone">رقم الهاتف</label>
+                                    <input class="input" id="contactPhone" type="tel" placeholder="مثال: 777123456" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactEmail">البريد الإلكتروني</label>
+                                <input class="input" id="contactEmail" type="email" placeholder="example@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactSubject">موضوع الرسالة</label>
+                                <select class="select" id="contactSubject">
+                                    <option value="">اختر موضوع الرسالة</option>
+                                    <option value="استفسار عن منتج">استفسار عن منتج</option>
+                                    <option value="استفسار عن طلب">استفسار عن طلب</option>
+                                    <option value="مشكلة في الموقع">مشكلة في الموقع</option>
+                                    <option value="اقتراح">اقتراح</option>
+                                    <option value="أخرى">أخرى</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMessage">الرسالة</label>
+                                <textarea class="textarea contact-textarea" id="contactMessage" placeholder="اكتب رسالتك هنا..." required></textarea>
+                            </div>
+
+                            <div class="contact-submit-row">
+                                <button class="btn contact-submit" type="submit">إرسال الرسالة</button>
+                                <span>سيتم حفظ رسالتك وإرسالها للمراجعة.</span>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <aside class="contact-side">
+                        <div class="contact-side-content">
+                            <span class="contact-side-label">EasyShop</span>
+                            <h2>خدمة العملاء</h2>
+                            <p>فريقنا متاح للإجابة عن استفسارات المنتجات والطلبات ومساعدتك في استخدام المتجر.</p>
+
+                            <div class="working-hours">
+                                <div>
+                                    <span>أيام العمل</span>
+                                    <strong>السبت - الخميس</strong>
+                                </div>
+                                <div>
+                                    <span>أوقات العمل</span>
+                                    <strong>9:00 ص - 6:00 م</strong>
+                                </div>
+                                <div>
+                                    <span>الجمعة</span>
+                                    <strong>إجازة</strong>
+                                </div>
+                            </div>
+
+                            <div class="contact-note">
+                                <span>💡</span>
+                                <p>إذا كان استفسارك عن طلب، اذكر رقم الطلب داخل الرسالة لتسهيل المتابعة.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-decoration">
+                            <div class="decoration-circle circle-one"></div>
+                            <div class="decoration-circle circle-two"></div>
+                            <span>💬</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact-help">
+            <div class="container">
+                <div class="contact-help-box">
+                    <div>
+                        <span>تحتاج إلى مشاهدة المنتجات؟</span>
+                        <h2>اكتشف منتجات EasyShop</h2>
+                        <p>تصفح الهواتف والساعات والسماعات وأجهزة الحاسوب المتوفرة لدينا.</p>
+                    </div>
+                    <a class="btn" href="products.html">تصفح المنتجات</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo footer-logo" href="index.html">Easy<span>Shop</span></a>
+                <p>متجر للأجهزة والإكسسوارات التقنية بخيارات متنوعة للاستخدام اليومي.</p>
+            </div>
+
+            <div>
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>خدمة العملاء</h3>
+                <ul>
+                    <li>السبت - الخميس</li>
+                    <li>9:00 صباحاً - 6:00 مساءً</li>
+                    <li>support@easyshop.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            © 2026 EasyShop - جميع الحقوق محفوظة
+        </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <button class="back-top" id="backTop" type="button">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

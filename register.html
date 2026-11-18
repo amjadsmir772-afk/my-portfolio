@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إنشاء حساب | EasyShop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <span>مرحباً بك في EasyShop</span>
+      <span class="clock" id="clock"></span>
+    </div>
+  </div>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Easy<span>Shop</span></a>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button">☰</button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="products.html">المنتجات</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="contact.html">اتصل بنا</a></li>
+          <li><a id="loginNav" href="login.html">تسجيل الدخول</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" type="button" title="الوضع الليلي">🌙</button>
+        <a class="icon-btn cart-link" href="cart.html">🛒 <span class="badge" id="cartCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-page register-page">
+    <div class="container auth-container register-container">
+
+      <section class="auth-intro register-intro">
+        <div class="auth-intro-content">
+          <a class="auth-brand" href="index.html">Easy<span>Shop</span></a>
+          <span class="auth-welcome">انضم إلينا</span>
+          <h1>أنشئ حسابك <span>وابدأ التسوق</span></h1>
+          <p>إنشاء الحساب لا يستغرق سوى لحظات. بعد التسجيل يمكنك الدخول إلى حسابك ومتابعة طلباتك بسهولة.</p>
+
+          <div class="auth-features">
+            <div class="auth-feature"><span>✓</span><div><strong>حساب شخصي</strong><small>احتفظ بمعلومات حسابك</small></div></div>
+            <div class="auth-feature"><span>✓</span><div><strong>متابعة الطلبات</strong><small>شاهد الطلبات السابقة وحالتها</small></div></div>
+            <div class="auth-feature"><span>✓</span><div><strong>تسوق بسهولة</strong><small>وصول أسرع إلى خدمات المتجر</small></div></div>
+          </div>
+        </div>
+
+        <div class="auth-shapes">
+          <span class="auth-circle circle-a"></span>
+          <span class="auth-circle circle-b"></span>
+          <span class="auth-circle circle-c"></span>
+        </div>
+      </section>
+
+      <section class="auth-form-side register-form-side">
+        <div class="auth-form-box register-form-box">
+
+          <div class="auth-form-heading">
+            <span>حساب جديد</span>
+            <h2>إنشاء حساب</h2>
+            <p>أدخل معلوماتك لإنشاء حساب جديد.</p>
+          </div>
+
+          <div id="formMessage" class="form-message"></div>
+
+          <form id="registerForm">
+
+            <div class="form-group">
+              <label for="regName">الاسم الكامل</label>
+              <div class="auth-input-wrap">
+                <span class="auth-input-icon">👤</span>
+                <input class="input auth-input" id="regName" type="text" placeholder="اكتب اسمك الكامل" autocomplete="name" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="regEmail">البريد الإلكتروني</label>
+              <div class="auth-input-wrap">
+                <span class="auth-input-icon">✉</span>
+                <input class="input auth-input" id="regEmail" type="email" placeholder="example@email.com" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="regPhone">رقم الهاتف</label>
+              <div class="auth-input-wrap">
+                <span class="auth-input-icon">📱</span>
+                <input class="input auth-input" id="regPhone" type="tel" placeholder="مثال: 777123456" autocomplete="tel" required>
+              </div>
+            </div>
+
+            <div class="register-password-grid">
+              <div class="form-group">
+                <label for="regPassword">كلمة المرور</label>
+                <div class="auth-input-wrap">
+                  <span class="auth-input-icon">🔒</span>
+                  <input class="input auth-input password-input" id="regPassword" type="password" placeholder="6 أحرف على الأقل" autocomplete="new-password" required>
+                  <button class="toggle-password" id="toggleRegPassword" type="button" aria-label="إظهار كلمة المرور">👁</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="regConfirm">تأكيد كلمة المرور</label>
+                <div class="auth-input-wrap">
+                  <span class="auth-input-icon">🔒</span>
+                  <input class="input auth-input password-input" id="regConfirm" type="password" placeholder="أعد كتابة كلمة المرور" autocomplete="new-password" required>
+                  <button class="toggle-password" id="toggleRegConfirm" type="button" aria-label="إظهار كلمة المرور">👁</button>
+                </div>
+              </div>
+            </div>
+
+            <label class="register-agreement">
+              <input id="regAgree" type="checkbox" required>
+              <span>أوافق على شروط استخدام المتجر وسياسة الخصوصية.</span>
+            </label>
+
+            <button class="btn auth-submit register-submit" type="submit">إنشاء الحساب</button>
+          </form>
+
+          <div class="auth-divider"><span>أو</span></div>
+
+          <div class="register-question">
+            <span>لديك حساب بالفعل؟</span>
+            <a href="login.html">تسجيل الدخول</a>
+          </div>
+
+          <a class="back-home" href="index.html">العودة إلى الرئيسية</a>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer auth-footer">
+    <div class="container footer-bottom">© 2026 EasyShop - جميع الحقوق محفوظة</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <button class="back-top" id="backTop" type="button">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

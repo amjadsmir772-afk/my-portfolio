@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>المنتجات | EasyShop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="container"><span>متجر EasyShop الإلكتروني</span><span class="clock" id="clock"></span></div>
+    </div>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a class="logo" href="index.html">Easy<span>Shop</span></a>
+            <button class="icon-btn menu-btn" id="menuBtn">☰</button>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a class="" href="index.html">الرئيسية</a></li>
+                    <li><a class="" href="about.html">من نحن</a></li>
+                    <li><a class="" href="services.html">الخدمات</a></li>
+                    <li><a class="active" href="products.html">المنتجات</a></li>
+                    <li><a class="" href="contact.html">اتصل بنا</a></li>
+                    <li><a id="loginNav" href="login.html">تسجيل الدخول</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeBtn" title="الوضع الليلي">🌙</button>
+                <a class="icon-btn cart-link" href="cart.html">🛒<span class="badge" id="cartCount">0</span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-head">
+            <div class="container">
+                <h1>المنتجات</h1>
+                <p>استخدم البحث والتصفية والترتيب لاختيار المنتج.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="filters">
+                    <div class="search-box"><input class="input" id="searchInput" placeholder="ابحث عن منتج..."></div>
+                    <select class="select filter-select" id="categoryFilter"></select><select
+                        class="select filter-select" id="sortSelect">
+                        <option value="">الترتيب</option>
+                        <option value="low">السعر: الأقل</option>
+                        <option value="high">السعر: الأعلى</option>
+                        <option value="name">الاسم</option>
+                    </select>
+                </div>
+                <div class="products-grid" id="productsGrid"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>EasyShop</h3>
+                <p>متجر إلكتروني تعليمي مبني باستخدام HTML5 وCSS3 وVanilla JavaScript مع LocalStorage.</p>
+            </div>
+            <div>
+                <h3>روابط</h3>
+                <ul>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="calculator.html">الحاسبة</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>خدمة العملاء</h3>
+                <ul>
+                    <li>الأحد - الخميس</li>
+                    <li>09:00 - 18:00</li>
+                    <li>support@easyshop.local</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">© 2026 EasyShop - مشروع مادة JavaScript</div>
+    </footer>
+    <div class="toast" id="toast"></div><button class="back-top" id="backTop">↑</button>
+    <div class="modal" id="productModal">
+        <div class="modal-box"><button class="close-modal" id="closeModal">×</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
